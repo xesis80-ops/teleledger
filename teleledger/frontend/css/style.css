@@ -1,0 +1,7 @@
+.tab-btn.active { color: #059669; font-weight: 600; }
+.balance-card { border-radius: 16px; padding: 16px; }
+.balance-positive { color: #059669; }
+.balance-negative { color: #dc2626; }
+.card { background: #fff; border-radius: 14px; padding: 14px; box-shadow: 0 1px 3px rgba(0,0,0,0.06); margin-bottom: 10px; }
+input, select, textarea { border: 1px solid #e5e7eb; border-radius: 10px; padding: 10px; width: 100%; margin-bottom: 10px; font-size: 14px; }
+button.primary { background: #059669; color: #fff; border-radius: 10px; padding: 10px; width: 100%; font-weight: 600; }

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>TeleLedger</title>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-50 text-gray-900 max-w-[430px] mx-auto min-h-screen flex flex-col">
+
+  <!-- Cold-start / loading skeleton (PRD 7: Render free-tier 30-50s cold start) -->
+  <div id="loading-screen" class="fixed inset-0 bg-white z-50 flex flex-col items-center justify-center gap-3">
+    <div class="w-12 h-12 border-4 border-emerald-500 border-t-transparent rounded-full animate-spin"></div>
+    <p class="text-sm text-gray-500" id="loading-text">Waking up the server…</p>
+  </div>
+
+  <header class="px-4 pt-4 pb-2">
+    <h1 class="text-xl font-bold">TeleLedger</h1>
+    <p id="username" class="text-xs text-gray-400"></p>
+  </header>
+
+  <main id="app" class="flex-1 overflow-y-auto px-4 pb-20"></main>
+
+  <!-- Bottom Tab Navigation (PRD 6) -->
+  <nav class="fixed bottom-0 left-0 right-0 max-w-[430px] mx-auto bg-white border-t flex justify-around py-2 text-xs">
+    <button data-tab="dashboard" class="tab-btn flex flex-col items-center gap-1 px-2 py-1">
+      <span>📊</span>Dashboard
+    </button>
+    <button data-tab="add" class="tab-btn flex flex-col items-center gap-1 px-2 py-1">
+      <span>➕</span>Add New
+    </button>
+    <button data-tab="collections" class="tab-btn flex flex-col items-center gap-1 px-2 py-1">
+      <span>🤝</span>Collections
+    </button>
+    <button data-tab="notes" class="tab-btn flex flex-col items-center gap-1 px-2 py-1">
+      <span>🔔</span>Notes
+    </button>
+  </nav>
+
+  <script src="js/api.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

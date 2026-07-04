@@ -1,0 +1,7 @@
+Django==5.0.6
+djangorestframework==3.15.1
+django-cors-headers==4.3.1
+psycopg2-binary==2.9.9
+django-apscheduler==0.6.2
+requests==2.32.3
+gunicorn==22.0.0
